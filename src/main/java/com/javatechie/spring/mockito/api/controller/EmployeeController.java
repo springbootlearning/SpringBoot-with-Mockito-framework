@@ -28,6 +28,6 @@ public class EmployeeController {
 	@GetMapping("/getEmployees")
 	public Response getAllEmployees() {
 		List<Employee> employees = repository.findAll();
-		return new Response("record counts : " + employees.size(), Boolean.TRUE);
+		return new Response("number of records : " + employees.size(), Boolean.TRUE);
 	}
 }
